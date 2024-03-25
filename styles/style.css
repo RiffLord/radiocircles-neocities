@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "Penna Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Penna Regular"), url("../fonts/penna.woff") format("woff");
+}
+@font-face {
+    font-family: "IBM Courier";
+    font-style: normal;
+    font-weight: normal;
+    src: local("IBM Courier"), url("../fonts/ibm-courier.woff2") format("woff2");
+}
+html {
+    font-size: 14px;
+    font-family: "IBM Courier";
+
+    background-color: ivory;
+}
+
+h1 {
+    font-family: "Penna Regular";
+    font-size: 100px;
+    text-align: center;
+
+    margin: 0;
+    padding: 20px 0;
+    color: mediumaquamarine;
+    text-shadow: 3px 3px 5px grey;
+}
+
+h2 {
+    font-size: 25px;
+
+    text-shadow: 3px 3px 5px grey;
+}
+
+body {
+    width: 1024px;
+    margin: 16px auto;
+    padding: 0 20px 20px 20px;
+    border: 5px solid grey;
+}
+
+address {
+    text-align: center;
+    font-weight: 600;
+}
+
+p, li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+a {
+    font-weight: 600;
+}
+
+span {
+    color: dimgrey;
+}

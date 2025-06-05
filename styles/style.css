@@ -169,8 +169,8 @@ address {
 
 /***** Contact page  */
 .contact {
-    height: 30em;
     margin: 5em auto;
+    height: 30em;
     width: 50%;
     padding: 1em;
     border: 0.2em solid grey;
@@ -214,6 +214,24 @@ address {
 .contact footer p {
     padding-top: 4em;
     line-height: 1.5em;
+}
+
+/***** Biography page  */
+.logo {
+    max-width: 60%;
+    /* Allows the image to automatically
+       resize along with the browser while
+       maintaining the aspect-ratio.
+     */
+    height: auto;
+    width: auto;
+    display: block;
+    margin: auto;
+    box-shadow: 3px 3px 5px grey;
+}
+
+.biography {
+    padding-top: 16px;
 }
 
 /***** Error page  */

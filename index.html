@@ -15,8 +15,15 @@
 	<!-- Embedded Bandcamp "Follow" button. -->
 	<iframe class="follow-button" scrolling="no" style="border: 0;height: 75px;" src="https://bandcamp.com/band_follow_button_deluxe/2212590471"></iframe>
       </div>
+      <menu class="menu">
+	<button class="navigation-button"><a href="biography.html">Biography</a></button>
+	<button class="navigation-button" disabled>Albums</button>
+	<button class="navigation-button" disabled>Recommended Listening</button>
+	<button class="navigation-button" disabled>Gear</button>
+	<button class="navigation-button" disabled>Photography</button>
+	<button class="navigation-button" disabled>Collages</button>
+      </menu>
       <hr>
-
       <!-- A preview track of the most recent release, embedded either
       from YouTube or Bandcamp. -->
       <iframe class="preview" width="560" height="315" src="https://www.youtube-nocookie.com/embed/DPcd_C8OUA4?si=rACzHIxXN-x0VpiX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -201,17 +208,36 @@
     </main>
     <footer>
       <address>	
-	<button><a href="contact.html">Contact</a></button>
-	<button><a href="https://radiocircles.bandcamp.com/">Bandcamp</a></button>
-	<button><a href="https://mirlo.space/radiocircles">Mirlo</a></button>
-	<button><a href="https://soundcloud.com/user-172684103">SoundCloud</a></button>
-	<button><a href="https://www.youtube.com/channel/UCUSTxZvRiQ9cSyx3XyhfEKQ">YouTube</a></button>
-	<button><a href="https://mastodon.social/@oddradiocircles">Mastodon</a></button>
-	<button><a href="https://www.reddit.com/user/oddradiocircles/">Reddit</a></button>
-	<button><a href="https://www.instagram.com/_orc__/">Instagram</a></button>
-	<button><a href="mailto:radiocircles@protonmail.com">e-mail</a></button>
-	<button><a href="#top">Back to top</a></button>
+	<button class="navigation-button"><a href="contact.html">Contact</a></button>
+	<button class="navigation-button"><a href="https://radiocircles.bandcamp.com/">Bandcamp</a></button>
+	<button class="navigation-button"><a href="https://mirlo.space/radiocircles">Mirlo</a></button>
+	<button class="navigation-button"><a href="https://soundcloud.com/user-172684103">SoundCloud</a></button>
+	<button class="navigation-button"><a href="https://www.youtube.com/channel/UCUSTxZvRiQ9cSyx3XyhfEKQ">YouTube</a></button>
+	<button class="navigation-button"><a href="https://mastodon.social/@oddradiocircles">Mastodon</a></button>
+	<button class="navigation-button"><a href="https://www.reddit.com/user/oddradiocircles/">Reddit</a></button>
+	<button class="navigation-button"><a href="https://www.instagram.com/_orc__/">Instagram</a></button>
+	<button class="navigation-button"><a href="mailto:radiocircles@protonmail.com">e-mail</a></button>
+	<button class="navigation-button"><a href="#top">Back to top</a></button>
       </address>
+      <hr>    
+      <section class="copyright">
+	<a class="neocities-link" href="https://neocities.org/">
+	  <img class="neocities-logo" src="./images/neocities.png"
+	  alt="Neocities logo" />
+	</a>
+	Copyright © 2020-<span id="copyright"><script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script></span>
+	Odd Radio Circles. All content on this website is released
+	under
+	<a class="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC
+	  BY-NC-SA
+	  4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg"
+		      style="max-width: 1em;max-height:1em;margin-left:
+			     .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg"
+					 style="max-width: 1em;max-height:1em;margin-left:
+						.2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg"
+							    style="max-width: 1em;max-height:1em;margin-left:.2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg"
+															 style="max-width: 1em;max-height:1em;margin-left: .2em;">
+      </section>
     </footer>
   </body>
 </html>

@@ -74,12 +74,19 @@ p, li {
     letter-spacing: 1px;
 }
 
-a {
+button, a {
+    font-family: "IBM Courier";
+    font-size: 16px;
     font-weight: 600;
 }
 
+/* a { */
+/*     font-weight: 600; */
+/* } */
+
 /* The links & contact information in the site footer are found in an address element. */
 address {
+    padding: 16px;
     text-align: center;
     font-weight: 600;
 }
@@ -96,6 +103,23 @@ address {
     /* grid-template-columns: 1fr 3fr 1fr; */
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 2fr 1fr;
+}
+
+.menu {
+    display:         flex;
+    margin:          16px auto;
+    justify-content: center;
+}
+
+.navigation-button {
+    margin:  4px;
+    padding: 4px;
+    background-color: mediumaquamarine;
+}
+
+.navigation-button a {
+    color: black;
+    text-decoration: none;
 }
 
 /* The embedded iframe from Bandcamp or YouTube is a flexbox in order to center it within the page. */
@@ -121,6 +145,26 @@ address {
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 2;
+}
+
+.copyright {
+    padding: 16px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.neocities-logo {
+    vertical-align: middle;
+    padding: 16px;
+    height: 40px;
+}
+
+.neocities-link {
+    text-decoration: none;
+}
+
+.license {
+    font-size: 14px;
 }
 
 /***** Contact page  */

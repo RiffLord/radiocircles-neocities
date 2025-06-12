@@ -154,7 +154,7 @@ address {
     height:         40px;
 }
 
-.neocities-link {
+.img-link {
     text-decoration: none;
 }
 
@@ -227,6 +227,23 @@ address {
 
 .biography {
     padding-top: 16px;
+}
+
+/***** Albums page  */
+.cover-art {
+    max-width:  400px;
+    height:     auto;
+    display:    block;
+    margin:     auto;
+    box-shadow: 3px 3px 5px grey;
+}
+
+.title {
+    font-size: 24px;
+}
+
+.info {
+    font-size: 20px
 }
 
 /***** Error page  */

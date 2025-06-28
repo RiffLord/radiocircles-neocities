@@ -19,12 +19,18 @@
       <button class="navigation-button"><a href="index.html">Home</a></button>
       <button class="navigation-button"><a href="biography.html">Biography</a></button>
       <button class="navigation-button" disabled>Albums</button>
-      <button class="navigation-button" disabled>Recommended Listening</button>
+      <button class="navigation-button"><a href="recommended.html">Recommended Listening</a></button>
       <button class="navigation-button"><a href="gear.html">Gear</a></button>
       <button class="navigation-button" disabled>Photography</button>
       <button class="navigation-button" disabled>Collages</button>
     </menu>
-    <!-- <hr> -->
+    <hr>
+    <menu class="table-of-contents">
+      <h2>discography</h2>
+	<!-- <li><a href="#concerto-for-fish">Concerto for Fish</a></li> -->
+	<li><a href="#life-on-earth">Life on Earth</a></li>
+	<li><a href="#stories-in-the-dust">Stories in the Dust</a></li>
+    </menu>
 
     <!-- A preview track of the most recent release, embedded either
 	 from YouTube or Bandcamp. -->
@@ -34,7 +40,7 @@
     <article>
       <h2>albums</h2>
       <!-- <div> -->
-      <!-- 	<h3 class="title">Concerto for Fish <span class="details">(2025)</span></h3> -->
+      <!-- 	<h3 id="concerto-for-fish" class="title">Concerto for Fish <span class="details">(2025)</span></h3> -->
       <!-- 	<img class="cover-art" -->
       <!-- 	     src="./images/cover-concerto-for-fish.jpg" alt="Concerto -->
       <!-- 							     for Fish -->
@@ -172,13 +178,16 @@
       <!-- 	</ul> -->
       <!-- </div> -->
       <!-- <hr> -->
-      <div>
-	<h3 class="title">Life on
+      <div class="album">
+	<h3 id="life-on-earth" class="title">Life on
 	Earth <span class="details">(2022)</span></h3>
 	<a class="img-link"
-	href="https://radiocircles.bandcamp.com/album/life-on-earth"><img class="cover-art"
-	src="./images/cover-life-on-earth.jpg" alt="Life on Earth
-	cover art"></a>
+	href="https://radiocircles.bandcamp.com/album/life-on-earth">
+	  <img class="cover-art"
+	       src="./images/cover-life-on-earth.jpg" alt="Life on
+							   Earth cover
+	       art">
+	</a>
 	<p>
 	  This (very) short EP is comprised of only two proper tracks,
 	  linked by a third, atonal 30-second
@@ -243,8 +252,8 @@
 	</ul>
       </div>
       <hr>      
-      <div>
-	<h3 class="title">Stories in the Dust <span class="details">(2021)</span></h3>
+      <div class="album">
+	<h3 id="stories-in-the-dust" class="title">Stories in the Dust <span class="details">(2021)</span></h3>
 	<a class="img-link" href="https://radiocircles.bandcamp.com/album/stories-in-the-dust"><img class="cover-art" src="./images/cover-stories-in-the-dust.png" alt="Stories
 							       in the
 							       Dust
@@ -287,8 +296,8 @@
 	  idea to write a few stanzas of minimalist poetry to
 	  accompany each of the tracks informed the album's concept,
 	  which represents a spiritual journey linking the earthly
-	  plane (side A, tracks 1-4) to the celestial plane (side B,
-	  tracks 5-7).
+	  plane (side A, tracks 1&ndash;4) to the celestial plane (side B,
+	  tracks 5&ndash;7).
 	  <br>
 	  Field recordings feature heavily across the album, most of
 	  them taken in Brindisi, Italy; a few of the field recordings
@@ -320,6 +329,7 @@
 	  Monte Young, the latter of which have indeed influenced the
 	  entirety of this album.
 	</p>
+      </div>
 	<div>
 	  <h4 class="info">Tracklist</h4>	 
 	  <ol>
@@ -365,7 +375,6 @@
 	    </li>
 	  </ul>
 	</div>
-      </div>
     </article>
   </main>
   <footer>
@@ -387,7 +396,7 @@
 	<img class="neocities-logo" src="./images/neocities.png"
 	     alt="Neocities logo" />
       </a>
-      Copyright © 2020-<span id="copyright"><script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script></span>
+      Copyright © 2020&ndash;<span id="copyright"><script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script></span>
       Odd Radio Circles. All content on this website is released
       under
       <a class="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC

@@ -101,9 +101,8 @@ address {
 }
 
 .menu {
-    display:         flex;
-    margin:          16px auto;
-    justify-content: center;
+    padding:    16px;
+    text-align: center;
 }
 
 .navigation-button {
@@ -115,6 +114,11 @@ address {
 .navigation-button a {
     color:           black;
     text-decoration: none;
+}
+
+.table-of-contents {
+    display: table;
+    margin:  auto;
 }
 
 /* The embedded iframe from Bandcamp or YouTube is a flexbox in order to center it within the page. */
@@ -134,8 +138,7 @@ address {
 }
 
 .follow-button {
-    padding: 16px;
-
+    padding:           16px;
     grid-column-start: 4;
     grid-column-end:   5;
     grid-row-start:    1;
@@ -233,9 +236,28 @@ address {
 .cover-art {
     max-width:  400px;
     height:     auto;
-    display:    block;
+    /* display: block; caused the
+       link to extend beyond the
+       horizontal margins of the
+       images. */
+    display:    inline-block;
     margin:     auto;
     box-shadow: 3px 3px 5px grey;
+}
+
+/* TODO: possibly move this to the i style. */
+.album {
+    text-align: center;
+}
+
+.album h3 {
+    font-size: 20px;
+}
+
+i {
+    display:     block;
+    padding-top: 16px;
+    font-size:   16px;
 }
 
 .title {
@@ -244,6 +266,16 @@ address {
 
 .info {
     font-size: 20px
+}
+
+/***** Recommended Listening page  */
+.recommendations {
+    max-height:   1080px;
+    overflow:     auto;
+}
+
+.section-separator {
+    border-width: 2px;
 }
 
 /***** Error page  */
